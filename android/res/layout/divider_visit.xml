@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center|start" android:layout_height="48dp" android:layout_width="match_parent" android:paddingStart="24dp" android:text="dasdsadsd" android:textAppearance="@style/visit_divider">
+
+</TextView>

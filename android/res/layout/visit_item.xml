@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:background="#FFFFFF" android:id="@+id/visit_main_item" android:layout_height="270dp" android:layout_marginEnd="5dp" android:layout_marginStart="5dp" android:layout_marginTop="5dp" android:layout_width="match_parent">
+
+    <TextView android:gravity="end" android:id="@+id/reamaining_days_header" android:layout_height="24dp" android:layout_marginEnd="20dp" android:layout_marginTop="16dp" android:layout_width="150dp" android:text="@string/visit_item_reamaining_days_header_text" android:textAppearance="@style/visit_purpose_text" android:textColor="#505050" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/purpose_desc"/>
+
+    <TextView android:gravity="end" android:id="@+id/remaining_days" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:layout_width="150dp" android:text="@string/visit_item_remaining_days_text" android:textAppearance="@style/visit_purpose_text" android:textColor="#505050" app:layout_constraintEnd_toEndOf="@+id/reamaining_days_header" app:layout_constraintStart_toStartOf="@+id/reamaining_days_header" app:layout_constraintTop_toBottomOf="@+id/reamaining_days_header"/>
+
+    <View android:background="#166CB1" android:id="@+id/visit_header" android:layout_height="56dp" android:layout_width="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView android:background="@drawable/rounded_corner_drawable" android:gravity="center" android:id="@+id/visit_title" android:layout_height="56dp" android:layout_width="0dp" android:text="@string/visit_item_visit_title_text" android:textAppearance="@style/visit_title" app:layout_constraintEnd_toEndOf="@+id/visit_header" app:layout_constraintStart_toEndOf="@+id/visit_cancel_btn" app:layout_constraintTop_toTopOf="@+id/visit_header"/>
+
+    <Button android:background="@drawable/rounded_corner_drawable" android:backgroundTint="#139F70" android:id="@+id/show_condtion_btn" android:layout_height="36dp" android:layout_marginStart="76dp" android:layout_marginTop="224dp" android:layout_width="250dp" android:text="@string/visit_item_show_condtion_btn_text" android:textAppearance="@style/visit_cancel_btn" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button android:background="@drawable/rounded_corner_drawable" android:backgroundTint="#186DB2" android:id="@+id/show_visit_btn" android:layout_height="36dp" android:layout_marginStart="124dp" android:layout_marginTop="176dp" android:layout_width="150dp" android:text="@string/visit_item_show_visit_btn_text" android:textAppearance="@style/visit_cancel_btn" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button android:background="@drawable/rounded_corner_drawable" android:backgroundTint="#2196F3" android:id="@+id/visit_cancel_btn" android:layout_height="30dp" android:layout_marginStart="8dp" android:layout_marginTop="16dp" android:layout_width="124dp" android:text="@string/visit_item_visit_cancel_btn_text" android:textAppearance="@style/visit_cancel_btn" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView android:id="@+id/purpose_desc" android:layout_height="wrap_content" android:layout_marginStart="36dp" android:layout_marginTop="4dp" android:layout_width="match_parent" android:text="@string/visit_item_purpose_desc_text" android:textAppearance="@style/visit_purpose_text" android:textColor="#505050" app:layout_constraintStart_toStartOf="@+id/purpose_title" app:layout_constraintTop_toBottomOf="@+id/purpose_title"/>
+
+    <TextView android:id="@+id/purpose_title" android:layout_height="24dp" android:layout_marginStart="20dp" android:layout_marginTop="10dp" android:layout_width="match_parent" android:text="@string/visit_item_purpose_title_text" android:textAppearance="@style/visit_purpose_text" android:textColor="#186DB2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/visit_title"/>
+
+    <TextView android:id="@+id/date" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_width="150dp" android:text="@string/visit_item_date_text" android:textAppearance="@style/visit_purpose_text" android:textColor="#505050" app:layout_constraintStart_toStartOf="@+id/date_title" app:layout_constraintTop_toBottomOf="@+id/date_title"/>
+
+    <TextView android:id="@+id/date_title" android:layout_height="24dp" android:layout_marginStart="20dp" android:layout_marginTop="16dp" android:layout_width="150dp" android:text="@string/visit_item_date_title_text" android:textAppearance="@style/visit_purpose_text" android:textColor="#505050" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/purpose_desc"/>
+</android.support.constraint.ConstraintLayout>

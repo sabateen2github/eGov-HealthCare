@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/condtion_note_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="#17AF7C">
+
+    <View
+        android:id="@+id/condtion_note_header"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#139F70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/condtion_note_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/condtion_note_item_condtion_note_title_text"
+        android:textAppearance="@style/condtion_item_header"
+        app:layout_constraintBottom_toBottomOf="@+id/condtion_note_header"
+        app:layout_constraintEnd_toEndOf="@+id/condtion_note_header"
+        app:layout_constraintStart_toStartOf="@+id/condtion_note_header"
+        app:layout_constraintTop_toTopOf="@+id/condtion_note_header" />
+
+    <TextView
+        android:id="@+id/condtion_note_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/condtion_note_item_condtion_note_msg_text"
+        android:textAppearance="@style/condtion_note_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/condtion_note_title"
+        app:layout_constraintStart_toStartOf="@+id/condtion_note_title"
+        app:layout_constraintTop_toBottomOf="@+id/condtion_note_header" />
+</android.support.constraint.ConstraintLayout>

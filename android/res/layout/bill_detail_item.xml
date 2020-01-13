@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/sub_bill_item_key_value" android:layout_height="36dp" android:layout_width="match_parent">
+
+    <TextView android:id="@+id/sub_bill_key" android:layout_height="wrap_content" android:layout_marginStart="5dp" android:layout_width="wrap_content" android:text="@string/bill_detail_item_sub_bill_key_text" android:textAppearance="@style/sub_bill_item_key_value" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.32999998"/>
+
+    <TextView android:id="@+id/sub_bill_value" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:layout_marginStart="8dp" android:layout_width="wrap_content" android:text="@string/bill_detail_item_sub_bill_value_text" android:textAppearance="@style/sub_bill_item_key_value" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.74" app:layout_constraintStart_toEndOf="@+id/sub_bill_key" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.37"/>
+</android.support.constraint.ConstraintLayout>

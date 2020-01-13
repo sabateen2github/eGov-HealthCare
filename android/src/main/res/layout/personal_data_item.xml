@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/personal_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:paddingStart="4dp"
+    android:paddingBottom="4dp">
+
+    <TextView
+        android:id="@+id/personal_item_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/personal_data_item_personal_item_header_text"
+        android:textAppearance="@style/personl_data_item_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/personal_item_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/personal_data_item_personal_item_data_text"
+        android:textAppearance="@style/personl_data_item"
+        app:layout_constraintStart_toStartOf="@+id/personal_item_header"
+        app:layout_constraintTop_toBottomOf="@+id/personal_item_header" />
+
+    <Button
+        android:id="@+id/personl_item_btn"
+        android:layout_width="124dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_drawable"
+        android:backgroundTint="#2283CC"
+        android:text="@string/personal_data_item_personl_item_btn_text"
+        android:textAppearance="@style/personl_data_item_btn"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_item_data"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

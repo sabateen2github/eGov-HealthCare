@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:background="#FFFFFF" android:id="@+id/note_item" android:layout_height="wrap_content" android:layout_marginEnd="5dp" android:layout_marginStart="5dp" android:layout_marginTop="5dp" android:layout_width="match_parent">
+
+    <View android:background="#AC1DB6" android:id="@+id/note_header" android:layout_height="56dp" android:layout_width="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView android:background="@drawable/rounded_corner_drawable" android:gravity="center" android:id="@+id/note_title" android:layout_height="56dp" android:layout_marginStart="8dp" android:layout_width="0dp" android:text="@string/note_item_note_title_text" android:textAppearance="@style/visit_note_title" app:layout_constraintEnd_toEndOf="@+id/note_header" app:layout_constraintStart_toStartOf="@+id/note_header" app:layout_constraintTop_toTopOf="@+id/note_header"/>
+
+    <TextView android:gravity="center_horizontal" android:id="@+id/note_desc" android:layout_height="0dp" android:layout_marginEnd="20dp" android:layout_marginStart="20dp" android:layout_marginTop="8dp" android:layout_width="match_parent" android:minHeight="150dp" android:text="@string/note_item_note_desc_text" android:textAppearance="@style/visit_note_desc" android:textColor="#505050" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/note_header"/>
+
+</android.support.constraint.ConstraintLayout>

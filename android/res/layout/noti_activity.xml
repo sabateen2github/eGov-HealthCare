@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/noti_activity_container" android:layout_height="wrap_content" android:layout_width="match_parent" android:minHeight="250dp">
+
+    <View android:background="#1A6CAA" android:id="@+id/objective_holder" android:layout_height="0dp" android:layout_width="match_parent" android:visibility="visible" app:layout_constraintBottom_toBottomOf="@id/objective_desc" app:layout_constraintTop_toTopOf="parent"/>
+
+    <View android:background="#0D5A94" android:id="@+id/activity_holder" android:layout_height="0dp" android:layout_width="match_parent" android:visibility="visible" app:layout_constraintBottom_toBottomOf="@+id/related_condtion" app:layout_constraintTop_toTopOf="@+id/activity_desc_header" tools:layout_editor_absoluteX="0dp"/>
+
+    <Button android:background="@drawable/rounded_corner_drawable" android:backgroundTint="#139F70" android:id="@+id/related_condtion" android:layout_height="wrap_content" android:layout_marginEnd="24dp" android:layout_marginStart="24dp" android:layout_marginTop="48dp" android:layout_width="0dp" android:text="@string/noti_activity_related_condtion_text" android:textAppearance="@style/related_condtion_btn" android:visibility="visible" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/activity_desc"/>
+
+    <TextView android:id="@+id/activity_desc_header" android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingTop="24dp" android:text="@string/noti_activity_activity_desc_header_text" android:textAppearance="@style/noti_activity_desc_header" android:visibility="visible" app:layout_constraintStart_toStartOf="@+id/objective_desc_header" app:layout_constraintTop_toBottomOf="@+id/objective_desc"/>
+
+    <TextView android:id="@+id/activity_desc" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:layout_marginStart="36dp" android:layout_marginTop="12dp" android:layout_width="0dp" android:text="@string/noti_activity_activity_desc_text" android:textAppearance="@style/noti_activity_desc" android:visibility="visible" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@+id/activity_desc_header" app:layout_constraintTop_toBottomOf="@+id/activity_desc_header"/>
+
+    <TextView android:id="@+id/objective_desc_header" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_marginTop="12dp" android:layout_width="wrap_content" android:text="@string/noti_activity_objective_desc_header_text" android:textAppearance="@style/noti_activity_objective_header" android:visibility="visible" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@+id/objective_holder"/>
+
+    <TextView android:id="@+id/objective_desc" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:layout_marginStart="36dp" android:layout_marginTop="16dp" android:layout_width="match_parent" android:paddingBottom="24dp" android:text="@string/noti_activity_objective_desc_text" android:textAppearance="@style/noti_activity_objective" android:visibility="visible" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toStartOf="@+id/objective_desc_header" app:layout_constraintTop_toBottomOf="@+id/objective_desc_header"/>
+
+    <View android:background="#0F5B95" android:id="@+id/activity_noti_footer" android:layout_height="20dp" android:layout_width="match_parent" android:visibility="visible" app:layout_constraintTop_toBottomOf="@+id/activity_holder" tools:layout_editor_absoluteX="0dp"/>
+
+    <ProgressBar android:id="@+id/noti_progress_activity" android:layout_height="0dp" android:layout_width="match_parent" android:visibility="gone" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?android:attr/progressBarStyle"/>
+
+</android.support.constraint.ConstraintLayout>

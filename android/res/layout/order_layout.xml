@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/order_layout_container" android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <android.support.design.widget.AppBarLayout android:background="#4D000000" android:id="@+id/appbar" android:layout_height="wrap_content" android:layout_width="match_parent" app:elevation="0dp">
+
+        <android.support.constraint.ConstraintLayout android:clickable="true" android:layout_height="300dp" android:layout_width="match_parent" app:layout_scrollFlags="scroll|enterAlways">
+
+            <LinearLayout android:background="#FFFFFF" android:layout_height="56dp" android:layout_width="match_parent" android:orientation="horizontal" app:layout_constraintBottom_toBottomOf="parent">
+
+                <ImageView android:background="?android:attr/selectableItemBackground" android:clickable="true" android:id="@+id/order_layout_close" android:layout_gravity="center_vertical" android:layout_height="56dp" android:layout_width="56dp" android:scaleType="center" android:scaleX="1.5" android:scaleY="1.5" android:tint="#8A8A8A" app:srcCompat="@drawable/ic_close_black_24dp"/>
+
+                <TextView android:gravity="center_vertical" android:id="@+id/order_layout_title" android:layout_gravity="center_vertical" android:layout_height="wrap_content" android:layout_marginStart="24dp" android:layout_weight="1" android:layout_width="wrap_content" android:text="@string/order_layout_order_layout_title_text" android:textAppearance="@style/toolbar_title" android:textColor="#807F7F"/>
+            </LinearLayout>
+
+            <View android:background="#A0A0A0" android:id="@+id/view2" android:layout_height="0.5dp" android:layout_marginBottom="4dp" android:layout_marginEnd="5dp" android:layout_marginStart="5dp" android:layout_width="0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView android:background="#FFFFFF" android:id="@+id/order_layout_recycler" android:layout_height="match_parent" android:layout_width="match_parent" android:padding="5dp" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/account"
+        android:title="@string/account" />
+
+
+    <item
+        android:id="@+id/visits"
+        android:icon="@drawable/visits"
+        android:title="@string/visits" />
+
+
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/noti"
+        android:title="@string/Notifications" />
+
+
+    <item
+        android:id="@+id/condtions"
+        android:icon="@drawable/condtions"
+        android:title="@string/Condtions" />
+
+</menu>

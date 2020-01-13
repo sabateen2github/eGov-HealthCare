@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_layout" android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+    <android.support.design.widget.CoordinatorLayout android:id="@+id/cor_layout" android:layout_height="0dp" android:layout_width="match_parent" app:layout_constraintBottom_toTopOf="@id/docker" app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.design.widget.AppBarLayout android:background="#FFFFFF" android:id="@+id/app_bar" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+            <android.support.v7.widget.Toolbar android:id="@+id/booking_toolbar" android:layout_height="?attr/actionBarSize" android:layout_width="match_parent" app:layout_scrollFlags="enterAlways|scroll|snap" app:navigationIcon="@null" app:title="Account" app:titleMarginStart="80dp" app:titleTextAppearance="@style/toolbar_title"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout android:background="#F2F3F1F1" android:id="@+id/content_layout" android:layout_height="match_parent" android:layout_width="match_parent" app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"/>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <LinearLayout android:background="#009688" android:id="@+id/docker" android:layout_gravity="bottom" android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical" app:layout_constraintBottom_toBottomOf="parent">
+
+        <android.support.design.widget.BottomNavigationView android:background="#009688" android:id="@+id/navigation_view" android:layout_height="wrap_content" android:layout_width="match_parent" app:elevation="0dp" app:itemIconTint="#00FFFFFF" app:itemTextAppearanceActive="@style/navigation_item_text" app:itemTextAppearanceInactive="@style/navigation_item_text" app:itemTextColor="@color/navigation_bar_color_item" app:labelVisibilityMode="labeled" app:menu="@menu/bottom_nav_menu"/>
+
+        <Button android:background="@drawable/rounded_corner_drawable" android:backgroundTint="#2196F3" android:id="@+id/order_Service" android:layout_height="36dp" android:layout_marginBottom="8dp" android:layout_marginEnd="30dp" android:layout_marginStart="30dp" android:layout_marginTop="8dp" android:layout_width="match_parent" android:text="@string/main_layout_order_Service_text" android:textAppearance="@style/navigation_item_text" android:textColor="#FFFF"/>
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

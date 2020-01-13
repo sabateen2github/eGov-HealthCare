@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E9FFFFFF">
+
+    <TextView
+        android:id="@+id/bill_item_date_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/bill_item_bill_item_date_header_text"
+        android:textAppearance="@style/bill_item_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bill_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/bill_item_bill_item_date_text"
+        android:textAppearance="@style/bill_item_data"
+        app:layout_constraintStart_toStartOf="@+id/bill_item_date_header"
+        app:layout_constraintTop_toBottomOf="@+id/bill_item_date_header" />
+
+    <TextView
+        android:id="@+id/bill_item_number_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/bill_item_bill_item_number_header_text"
+        android:textAppearance="@style/bill_item_header"
+        app:layout_constraintStart_toStartOf="@+id/bill_item_date_header"
+        app:layout_constraintTop_toBottomOf="@+id/bill_item_date" />
+
+    <TextView
+        android:id="@+id/bill_item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/bill_item_bill_item_number_text"
+        android:textAppearance="@style/bill_item_data"
+        app:layout_constraintStart_toStartOf="@+id/bill_item_number_header"
+        app:layout_constraintTop_toBottomOf="@+id/bill_item_number_header" />
+
+    <Button
+        android:id="@+id/bill_item_btn"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_corner_drawable"
+        android:backgroundTint="#1A6EB1"
+        android:elevation="0dp"
+        android:text="@string/bill_item_bill_item_btn_text"
+        android:textAppearance="@style/bill_item_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bill_item_number"
+        app:layout_constraintTop_toBottomOf="@+id/bill_item_number" />
+</android.support.constraint.ConstraintLayout>

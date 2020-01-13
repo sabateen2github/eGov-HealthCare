@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:background="#FFFFFF" android:id="@+id/personal_container" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <Button android:background="@drawable/rounded_corner_drawable" android:backgroundTint="#2283CC" android:elevation="0dp" android:id="@+id/personl_btn" android:layout_height="36dp" android:layout_marginBottom="20dp" android:layout_marginTop="20dp" android:layout_width="200dp" android:text="@string/personal_data_header_personl_btn_text" android:textAppearance="@style/noti_btn" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@+id/personal_title" app:layout_constraintStart_toStartOf="@+id/personal_title" app:layout_constraintTop_toBottomOf="@+id/personal_title"/>
+
+    <TextView android:gravity="center" android:id="@+id/personal_title" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:layout_marginStart="8dp" android:layout_marginTop="32dp" android:layout_width="0dp" android:text="@string/personal_data_header_personal_title_text" android:textAppearance="@style/personl_data_header" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>

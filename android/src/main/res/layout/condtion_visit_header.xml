@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="#139F70">
+
+    <TextView
+        android:id="@+id/ordinary_header_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/condtion_visit_header_ordinary_header_title_text"
+        android:textAppearance="@style/routine_header_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ordinary_header_activation_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/condtion_visit_header_ordinary_header_activation_header_text"
+        android:textAppearance="@style/routine_header_details"
+        app:layout_constraintEnd_toEndOf="@+id/ordinary_header_title"
+        app:layout_constraintStart_toStartOf="@+id/ordinary_header_title"
+        app:layout_constraintTop_toBottomOf="@+id/ordinary_header_title" />
+
+    <TextView
+        android:id="@+id/ordinary_header_activation_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/condtion_visit_header_ordinary_header_activation_from_text"
+        android:textAppearance="@style/routine_header_details"
+        app:layout_constraintEnd_toEndOf="@+id/ordinary_header_activation_header"
+        app:layout_constraintStart_toStartOf="@+id/ordinary_header_activation_header"
+        app:layout_constraintTop_toBottomOf="@+id/ordinary_header_activation_header" />
+
+    <TextView
+        android:id="@+id/ordinary_header_activation_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/condtion_visit_header_ordinary_header_activation_to_text"
+        android:textAppearance="@style/routine_header_details"
+        app:layout_constraintStart_toStartOf="@+id/ordinary_header_activation_from"
+        app:layout_constraintTop_toBottomOf="@+id/ordinary_header_activation_from" />
+
+    <TextView
+        android:id="@+id/ordinary_header_purpose_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/condtion_visit_header_ordinary_header_purpose_header_text"
+        android:textAppearance="@style/routine_header_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordinary_header_activation_to" />
+
+    <TextView
+        android:id="@+id/ordinary_header_purpose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/condtion_visit_header_ordinary_header_purpose_text"
+        android:textAppearance="@style/routine_header_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ordinary_header_purpose_header"
+        app:layout_constraintTop_toBottomOf="@+id/ordinary_header_purpose_header"
+        app:layout_constraintVertical_bias="0.49" />
+
+</android.support.constraint.ConstraintLayout>

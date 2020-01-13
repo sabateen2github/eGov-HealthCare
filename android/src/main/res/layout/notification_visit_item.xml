@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/noti_visit_main_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#FFFFFF"
+    android:minHeight="250dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/noti_state_visit_header"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="@string/notification_visit_item_noti_state_visit_header_text"
+        android:textAppearance="@style/visit_purpose_text"
+        android:textColor="#505050"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noti_purpose_desc"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/noti_state_visit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notification_visit_item_noti_state_visit_text"
+        android:textAppearance="@style/visit_purpose_text"
+        android:textColor="#505050"
+        app:layout_constraintEnd_toEndOf="@+id/noti_state_visit_header"
+        app:layout_constraintStart_toStartOf="@+id/noti_state_visit_header"
+        app:layout_constraintTop_toBottomOf="@+id/noti_date_header"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/noti_visit_header_"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#166CB1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/noti_visit_header"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_corner_drawable"
+        android:gravity="center"
+        android:text="@string/notification_visit_item_noti_visit_header_text"
+        android:textAppearance="@style/visit_title"
+        app:layout_constraintEnd_toEndOf="@+id/noti_visit_header_"
+        app:layout_constraintStart_toStartOf="@+id/noti_visit_header_"
+        app:layout_constraintTop_toTopOf="@+id/noti_visit_header_"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/noti_show_condtion_btn"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/rounded_corner_drawable"
+        android:backgroundTint="#139F70"
+        android:text="@string/notification_visit_item_noti_show_condtion_btn_text"
+        android:textAppearance="@style/visit_cancel_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noti_date"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/noti_purpose_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/notification_visit_item_noti_purpose_desc_text"
+        android:textAppearance="@style/visit_purpose_text"
+        android:textColor="#505050"
+        app:layout_constraintStart_toStartOf="@+id/noti_purpose_header"
+        app:layout_constraintTop_toBottomOf="@+id/noti_purpose_header"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/noti_purpose_header"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/notification_visit_item_noti_purpose_header_text"
+        android:textAppearance="@style/visit_purpose_text"
+        android:textColor="#186DB2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noti_visit_header"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/noti_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/notification_visit_item_noti_date_text"
+        android:textAppearance="@style/visit_purpose_text"
+        android:textColor="#505050"
+        app:layout_constraintStart_toStartOf="@+id/noti_purpose_header"
+        app:layout_constraintTop_toBottomOf="@+id/noti_date_header"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/noti_date_header"
+        android:layout_width="150dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/notification_visit_item_noti_date_header_text"
+        android:textAppearance="@style/visit_purpose_text"
+        android:textColor="#505050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noti_purpose_desc"
+        tools:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/noti_visit_item_progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/rounded_corner_drawable" android:backgroundTint="#08979B" android:clickable="true" android:id="@+id/inst_visit_appoint_container_s" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_width="match_parent" android:orientation="vertical" android:padding="10dp">
+
+    <TextView android:clickable="false" android:gravity="center_horizontal" android:id="@+id/visit_inst_appoint_day_time_s" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_width="match_parent" android:text="@string/visit_medical_instit_seperate_visit_inst_appoint_day_time_s_text" android:textAppearance="@style/visit_inst_appointment_day_and_time"/>
+
+    <TextView android:clickable="false" android:gravity="center_horizontal" android:id="@+id/visit_inst_appoint_date_s" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_width="match_parent" android:text="@string/visit_medical_instit_seperate_visit_inst_appoint_date_s_text" android:textAppearance="@style/visit_inst_appointment_date"/>
+
+    <TextView android:clickable="false" android:gravity="center_horizontal" android:id="@+id/visit_inst_appoint_path_s" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:layout_marginTop="30dp" android:layout_width="match_parent" android:text="@string/visit_medical_instit_seperate_visit_inst_appoint_path_s_text" android:textAppearance="@style/visit_inst_appointment_path"/>
+
+</LinearLayout>

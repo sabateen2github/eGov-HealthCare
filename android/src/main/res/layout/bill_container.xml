@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:background="#08979B" android:id="@+id/bill_container" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <Button android:background="@drawable/rounded_corner_drawable" android:backgroundTint="#DA6D00" android:id="@+id/bill_pay_btn" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_marginEnd="20dp" android:layout_marginStart="20dp" android:layout_marginTop="36dp" android:layout_width="120dp" android:text="@string/bill_container_bill_pay_btn_text" android:textAppearance="@style/bill_btn" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/bill__amount_req_covered"/>
+
+    <TextView
+        android:id="@+id/bill_main_title"
+        android:layout_width="0dp"
+        android:layout_height="81dp"
+        android:background="#0B6664"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:text="@string/bill_container_bill_main_title_text"
+        android:textAppearance="@style/bill_main_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bill_sub_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill_main_title" />
+
+    <View android:background="#FFFFFF" android:id="@+id/bill_small_divider" android:layout_height="1dp" android:layout_marginTop="16dp" android:layout_width="match_parent" app:layout_constraintTop_toBottomOf="@+id/bill_sub_container" tools:layout_editor_absoluteX="-16dp"/>
+
+    <TextView android:id="@+id/bill_total_amount_header" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginTop="32dp" android:layout_width="wrap_content" android:text="@string/bill_container_bill_total_amount_header_text" android:textAppearance="@style/bill_details" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/bill_small_divider"/>
+
+    <TextView android:id="@+id/bill_total_amount_covered_header" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginTop="20dp" android:layout_width="wrap_content" android:text="@string/bill_container_bill_total_amount_covered_header_text" android:textAppearance="@style/bill_details" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/bill_total_amount_header"/>
+
+    <TextView android:id="@+id/bill__amount_req_covered_header" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginTop="20dp" android:layout_width="wrap_content" android:text="@string/bill_container_bill__amount_req_covered_header_text" android:textAppearance="@style/bill_all_amount" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/bill_total_amount_covered_header"/>
+
+    <TextView android:id="@+id/bill__amount_req_covered" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:layout_marginStart="8dp" android:layout_marginTop="20dp" android:layout_width="wrap_content" android:text="@string/bill_container_bill__amount_req_covered_text" android:textAppearance="@style/bill_all_amount" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/bill__amount_req_covered_header"/>
+
+    <TextView android:id="@+id/bill_total_amount" android:layout_height="wrap_content" android:layout_marginEnd="16dp" android:layout_width="wrap_content" android:text="@string/bill_container_bill_total_amount_text" android:textAppearance="@style/bill_details" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@+id/bill_total_amount_header"/>
+
+    <TextView android:id="@+id/bill_total_amount_covered" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_width="wrap_content" android:text="@string/bill_container_bill_total_amount_covered_text" android:textAppearance="@style/bill_details" app:layout_constraintEnd_toEndOf="@+id/bill_total_amount" app:layout_constraintTop_toBottomOf="@+id/bill_total_amount"/>
+
+    <ProgressBar android:id="@+id/bill_total_progress_bar" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_width="wrap_content" app:layout_constraintEnd_toEndOf="@+id/bill__amount_req_covered" app:layout_constraintStart_toStartOf="@+id/bill__amount_req_covered" app:layout_constraintTop_toBottomOf="@+id/bill__amount_req_covered" style="?android:attr/progressBarStyle"/>
+
+</android.support.constraint.ConstraintLayout>

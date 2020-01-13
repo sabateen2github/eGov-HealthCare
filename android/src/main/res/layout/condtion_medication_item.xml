@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_medication"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="#17AF7C">
+
+
+    <View
+        android:id="@+id/condtion_med_header"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#139F70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/condtion_med_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/condtion_medication_item_condtion_med_title_text"
+        android:textAppearance="@style/condtion_item_header"
+        app:layout_constraintBottom_toBottomOf="@+id/condtion_med_header"
+        app:layout_constraintEnd_toEndOf="@+id/condtion_med_header"
+        app:layout_constraintStart_toStartOf="@+id/condtion_med_header"
+        app:layout_constraintTop_toTopOf="@+id/condtion_med_header" />
+
+    <LinearLayout
+        android:id="@+id/condtion_medication_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/condtion_med_header">
+
+        <TextView
+            android:id="@+id/medication_name_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/condtion_medication_item_medication_name_header_text"
+            android:textAppearance="@style/noti_activity_desc_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/condtion_medication_buy" />
+
+        <TextView
+            android:id="@+id/medication_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/condtion_medication_item_medication_name_text"
+            android:textAppearance="@style/noti_activity_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/medication_name_header"
+            app:layout_constraintTop_toBottomOf="@+id/medication_name_header" />
+
+        <TextView
+            android:id="@+id/medication_form_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/condtion_medication_item_medication_form_header_text"
+            android:textAppearance="@style/noti_activity_desc_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medication_name"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/medication_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/condtion_medication_item_medication_form_text"
+            android:textAppearance="@style/noti_activity_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/medication_name_header"
+            app:layout_constraintTop_toBottomOf="@+id/medication_form_header"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/medication_abuse_type_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/condtion_medication_item_medication_abuse_type_header_text"
+            android:textAppearance="@style/noti_activity_desc_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/condtion_medication_buy"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/medication_abuse_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/condtion_medication_item_medication_abuse_type_text"
+            android:textAppearance="@style/noti_activity_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/medication_name_header"
+            app:layout_constraintTop_toBottomOf="@+id/medication_name_header"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/medication_indication_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/condtion_medication_item_medication_indication_header_text"
+            android:textAppearance="@style/noti_activity_desc_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/condtion_medication_buy" />
+
+        <TextView
+            android:id="@+id/medication_indication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/condtion_medication_item_medication_indication_text"
+            android:textAppearance="@style/noti_activity_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/medication_name_header"
+            app:layout_constraintTop_toBottomOf="@+id/medication_name_header" />
+
+        <TextView
+            android:id="@+id/medication_number_dosage_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/condtion_medication_item_medication_number_dosage_header_text"
+            android:textAppearance="@style/noti_activity_desc_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/condtion_medication_buy" />
+
+        <TextView
+            android:id="@+id/medication_number_dosage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/condtion_medication_item_medication_number_dosage_text"
+            android:textAppearance="@style/noti_activity_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/medication_name_header"
+            app:layout_constraintTop_toBottomOf="@+id/medication_name_header" />
+
+        <TextView
+            android:id="@+id/medication_dosage_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/condtion_medication_item_medication_dosage_header_text"
+            android:textAppearance="@style/noti_activity_desc_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medication_form" />
+
+        <TextView
+            android:id="@+id/medication_dosage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/condtion_medication_item_medication_dosage_text"
+            android:textAppearance="@style/noti_activity_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/medication_name_header"
+            app:layout_constraintTop_toBottomOf="@+id/medication_dosage_header" />
+
+        <TextView
+            android:id="@+id/medication_active_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/condtion_medication_item_medication_active_header_text"
+            android:textAppearance="@style/noti_activity_desc_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medication_dosage" />
+
+        <TextView
+            android:id="@+id/medication_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/condtion_medication_item_medication_active_text"
+            android:textAppearance="@style/noti_activity_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/medication_name_header"
+            app:layout_constraintTop_toBottomOf="@+id/medication_active_header" />
+
+        <TextView
+            android:id="@+id/medication_deactive_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/condtion_medication_item_medication_deactive_header_text"
+            android:textAppearance="@style/noti_activity_desc_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medication_dosage" />
+
+        <TextView
+            android:id="@+id/medication_deactive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/condtion_medication_item_medication_deactive_text"
+            android:textAppearance="@style/noti_activity_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/medication_name_header"
+            app:layout_constraintTop_toBottomOf="@+id/medication_active_header" />
+
+
+        <TextView
+            android:id="@+id/medication_note_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/condtion_medication_item_medication_note_header_text"
+            android:textAppearance="@style/noti_activity_desc_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medication_dosage" />
+
+        <TextView
+            android:id="@+id/medication_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/condtion_medication_item_medication_note_text"
+            android:textAppearance="@style/noti_activity_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/medication_name_header"
+            app:layout_constraintTop_toBottomOf="@+id/medication_active_header" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

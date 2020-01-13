@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:background="#08979B" android:id="@+id/sub_bill_main_container" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TextView android:background="#0B6664" android:gravity="center" android:id="@+id/sub_bill_title_id" android:layout_height="56dp" android:layout_width="0dp" android:text="@string/sub_bill_sub_bill_title_id_text" android:textAppearance="@style/bill_main_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/sub_bill_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub_bill_title_id">
+
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/sub_bill_amount_header" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:layout_marginStart="8dp" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:text="@string/sub_bill_sub_bill_amount_header_text" android:textAppearance="@style/sub_bill_amount_header" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/sub_bill_container"/>
+
+    <TextView android:id="@+id/sub_bill_amount" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_marginEnd="8dp" android:layout_marginStart="8dp" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:text="@string/sub_bill_sub_bill_amount_text" android:textAppearance="@style/sub_bill_amount" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/sub_bill_amount_header"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical">
+
+        <include android:id="@+id/personal_header" android:layout_height="wrap_content" android:layout_width="match_parent" layout="@layout/personal_data_header"/>
+
+        <include android:id="@+id/personal_name" android:layout_height="wrap_content" android:layout_width="match_parent" layout="@layout/personal_data_item"/>
+
+        <include android:id="@+id/personal_gender" android:layout_height="wrap_content" android:layout_width="match_parent" layout="@layout/personal_data_item"/>
+
+        <include android:id="@+id/personal_phone" android:layout_height="wrap_content" android:layout_width="match_parent" layout="@layout/personal_data_item"/>
+
+        <include android:id="@+id/personal_height" android:layout_height="wrap_content" android:layout_width="match_parent" layout="@layout/personal_data_item"/>
+
+        <include android:id="@+id/personal_weight" android:layout_height="wrap_content" android:layout_width="match_parent" layout="@layout/personal_data_item"/>
+
+        <include android:id="@+id/personal_birth" android:layout_height="wrap_content" android:layout_width="match_parent" layout="@layout/personal_data_item"/>
+
+        <include android:id="@+id/perosnl_address" android:layout_height="wrap_content" android:layout_width="match_parent" layout="@layout/personal_data_item"/>
+
+        <include android:id="@+id/perosnl_insurance" android:layout_height="wrap_content" android:layout_width="match_parent" layout="@layout/personal_data_item"/>
+
+        <include android:id="@+id/perosnl_lang" android:layout_height="wrap_content" android:layout_width="match_parent" layout="@layout/personal_data_item"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

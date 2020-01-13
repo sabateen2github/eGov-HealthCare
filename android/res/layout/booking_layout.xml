@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/booking_container" android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <android.support.design.widget.AppBarLayout android:id="@+id/appbar" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+        <android.support.v7.widget.Toolbar android:background="#124E50" android:id="@+id/booking_toolbar" android:layout_height="?attr/actionBarSize" android:layout_width="match_parent" app:layout_scrollFlags="enterAlways|scroll|snap" app:navigationIcon="@drawable/ic_arrow_back__toolbar_smart" app:title="Book Appointment" app:titleMarginStart="80dp" app:titleTextAppearance="@style/toolbar_title_booking"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout android:background="#2C9699" android:id="@+id/booking_content" android:layout_height="match_parent" android:layout_width="match_parent" app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <ProgressBar android:id="@+id/booking_progress" android:indeterminateTint="#FFC107" android:layout_height="match_parent" android:layout_width="match_parent" style="?android:attr/progressBarStyle"/>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
